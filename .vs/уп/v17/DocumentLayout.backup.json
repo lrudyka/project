@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{887979AF-140B-489B-9A3C-B579E254AC19}|\u0443\u043F\\\u0443\u043F.csproj|d:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\refreshrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{887979AF-140B-489B-9A3C-B579E254AC19}|\u0443\u043F\\\u0443\u043F.csproj|solutionrelative:\u0443\u043F\\refreshrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{887979AF-140B-489B-9A3C-B579E254AC19}|\u0443\u043F\\\u0443\u043F.csproj|d:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\showrequestadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{887979AF-140B-489B-9A3C-B579E254AC19}|\u0443\u043F\\\u0443\u043F.csproj|solutionrelative:\u0443\u043F\\showrequestadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{887979AF-140B-489B-9A3C-B579E254AC19}|\u0443\u043F\\\u0443\u043F.csproj|d:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\addrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{887979AF-140B-489B-9A3C-B579E254AC19}|\u0443\u043F\\\u0443\u043F.csproj|solutionrelative:\u0443\u043F\\addrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "refreshRequest.cs",
+              "DocumentMoniker": "D:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\refreshRequest.cs",
+              "RelativeDocumentMoniker": "\u0443\u043F\\refreshRequest.cs",
+              "ToolTip": "D:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\refreshRequest.cs",
+              "RelativeToolTip": "\u0443\u043F\\refreshRequest.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAAJ4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T10:32:04.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "showRequestAdmin.cs",
+              "DocumentMoniker": "D:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\showRequestAdmin.cs",
+              "RelativeDocumentMoniker": "\u0443\u043F\\showRequestAdmin.cs",
+              "ToolTip": "D:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\showRequestAdmin.cs",
+              "RelativeToolTip": "\u0443\u043F\\showRequestAdmin.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAkwKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T10:21:02.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "addRequest.cs",
+              "DocumentMoniker": "D:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\addRequest.cs",
+              "RelativeDocumentMoniker": "\u0443\u043F\\addRequest.cs",
+              "ToolTip": "D:\\4 \u043A\u0443\u0440\u0441\\\u0443\u043F\\\u0443\u043F\\\u0443\u043F\\addRequest.cs",
+              "RelativeToolTip": "\u0443\u043F\\addRequest.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAswJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T10:16:25.885Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
