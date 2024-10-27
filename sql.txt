@@ -1,0 +1,90 @@
+CREATE TABLE Roles (
+    roleID INT IDENTITY(1,1) PRIMARY KEY,
+    roleName VARCHAR(50) NOT NULL
+); 
+INSERT INTO Roles (roleName) VALUES
+('Менеджер'),
+('Автомеханик'),
+('Оператор'),
+('Заказчик');
+
+
+CREATE TABLE Users (
+    userID INT IDENTITY(1,1) PRIMARY KEY,
+    fio VARCHAR(100) NOT NULL,
+    phone VARCHAR(20),
+    login VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    roleID INT,
+    FOREIGN KEY (roleID) REFERENCES Roles(roleID)
+);
+INSERT INTO Users (fio, phone, login, password, roleID) VALUES
+('Белов Александр Давидович', '89210563128', 'login1', 'pass1', 1),
+('Харитонова Мария Павловна', '89535078985', 'login2', 'pass2', 2),
+('Марков Давид Иванович', '89210673849', 'login3', 'pass3', 2),
+('Громова Анна Семёновна', '89990563748', 'login4', 'pass4', 3),
+('Карташова Мария Данииловна', '89994563847', 'login5', 'pass5', 3),
+('Касаткин Егор Львович', '89219567849', 'login11', 'pass11', 4),
+('Ильина Тамара Даниловна', '89219567841', 'login12', 'pass12', 4),
+('Елисеева Юлиана Алексеевна', '89219567842', 'login13', 'pass13', 4),
+('Никифорова Алиса Тимофеевна', '89219567843', 'login14', 'pass14', 4),
+('Васильев Али Евгеньевич', '89219567844', 'login15', 'pass15', 2);
+
+
+CREATE TABLE Cars (
+    carID INT IDENTITY(1,1) PRIMARY KEY,
+    carType VARCHAR(50) NOT NULL,
+    carModel VARCHAR(100) NOT NULL
+);
+INSERT INTO Cars (carType, carModel) VALUES
+('Легковая', 'Hyundai Avante (CN7)'),
+('Легковая', 'Nissan 180SX'),
+('Легковая', 'Toyota 2000GT'),
+('Грузовая', 'Citroen Berlingo (B9)'),
+('Грузовая', 'УАЗ 2360');
+
+
+CREATE TABLE Statuses (
+    statusID INT IDENTITY(1,1) PRIMARY KEY,
+    statusName VARCHAR(50) NOT NULL
+);
+INSERT INTO Statuses (statusName) VALUES
+('Новая заявка'),
+('В процессе ремонта'),
+('Готова к выдаче');
+
+
+CREATE TABLE Requests (
+    requestID INT IDENTITY(1,1) PRIMARY KEY,
+    startDate DATE NOT NULL,
+    carID INT,
+    problemDescription TEXT NOT NULL,
+    statusID INT,
+    completionDate DATE,
+    masterID INT,
+    clientID INT,
+    FOREIGN KEY (carID) REFERENCES Cars(carID),
+    FOREIGN KEY (statusID) REFERENCES Statuses(statusID),
+    FOREIGN KEY (masterID) REFERENCES Users(userID),
+    FOREIGN KEY (clientID) REFERENCES Users(userID)
+);
+INSERT INTO Requests (startDate, carID, problemDescription, statusID, completionDate, masterID, clientID) VALUES
+('2023-06-06', 1, 'Отказали тормоза.', 2, NULL, 2, 7),
+('2023-05-05', 2, 'Отказали тормоза.', 2, NULL, 3, 8),
+('2022-07-07', 3, 'В салоне пахнет бензином.', 3, '2023-01-01', 3, 9),
+('2023-08-02', 4, 'Руль плохо крутится.', 1, NULL, NULL, 8),
+('2023-08-02', 5, 'Руль плохо крутится.', 1, NULL, NULL, 9);
+
+
+CREATE TABLE Comments (
+    commentID INT IDENTITY(1,1) PRIMARY KEY,
+    message TEXT NOT NULL,
+    masterID INT,
+    requestID INT,
+    FOREIGN KEY (masterID) REFERENCES Users(userID),
+    FOREIGN KEY (requestID) REFERENCES Requests(requestID)
+);
+INSERT INTO Comments (message, masterID, requestID) VALUES
+('Очень странно.', 2, 1),
+('Будем разбираться!', 3, 2),
+('Будем разбираться!', 3, 3);
